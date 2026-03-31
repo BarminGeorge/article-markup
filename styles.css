@@ -1,196 +1,146 @@
-/* Тут пиши основные стили */
-/* Контейнер для статьи, чтобы она была по центру */
-.content {
-    max-width: 700px; /* Та самая ширина из макета */
-    margin: 0 auto;   /* Центрируем блок */
-    padding: 193px 20px 50px; /* 193px — отступ сверху из твоего скрина */
-}
-
-<<<<<<< HEAD
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-}
-
 .site-header {
-    background: #ffffff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 20px 40px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+    border-bottom: 1px solid #e2e2e2;
 }
 
-.logo a {
-    display: block;
-    line-height: 0;
+:root {
+    --main-font: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
+}
+
+.header-container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    border-bottom: 1px solid #999999;
+    border-top: 1px solid #999999;
+    background-color: #faf9f8;
 }
 
 .logo img {
-    height: 64px;
-    width: 97px;
+    display: block;
+    margin-left: 38px;
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
 
-.main-nav {
-    border-top: 1px solid #000000;
-    border-bottom: 1px solid #000000;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    margin-left: -40px;
-    margin-right: -40px;
-    padding-left: 40px;
-    padding-right: 40px;
-    background-color: #f5f5f5;
-}
-
-.nav-list {
+nav ul {
     list-style: none;
     display: flex;
-    gap: 40px;
+    gap: 30px;
 }
 
-.nav-list a {
-    text-decoration: none;
-    color: #333333;
-    font-family: LucidaGrande, 'Lucida Grande', Arial, sans-serif;
-    font-size: 24px;
-    line-height: 1.2;
-    text-align: left;
-    transition: border-bottom 0.3s ease;
-    display: inline-block;
-    border-bottom: 1px solid transparent;
-    position: relative;
+nav a:hover {
+    text-decoration: underline;
 }
 
-.nav-list a::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 3px;
-    height: 1px;
-    background-color: #000000;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.nav-list a:hover::after {
-    opacity: 1;
-}
-
-.nav-list a:hover {
-    border-bottom: 1px solid transparent;
-}
-
-.nav-list a.active {
+nav a.active {
     color: #d0021b;
 }
 
-=======
-/* Стили для заголовка h1 (мы их уже обсуждали) */
-h1 {
-    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
+.article {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 20px 40px;
+}
+
+nav a {
+    font-family: var(--main-font);
+    font-size: 24px;
+    color: #333333;
+    text-decoration: none;
+    line-height: 36px;
+}
+
+.article h1 {
+    font-family: var(--main-font);
     font-size: 42px;
-    line-height: 44px;
+    font-weight: bold;
     color: rgba(0, 0, 0, 0.84);
-    margin-bottom: 25px;
+    line-height: 44px;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
-/* Стили для подзаголовков (если они есть в тексте) */
-h2 {
-    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
-    font-size: 30px;
-    margin-top: 40px;
-    margin-bottom: 20px;
+.article h2 {
+    font-family: var(--main-font);
+    font-size: 34px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.84);
+    line-height: 39px;
+    margin-top: 55px;
+    margin-bottom: 10px;
 }
 
-/* Стили для основного текста */
-p {
+.article p {
     font-family: Georgia, Cambria, "Times New Roman", Times, serif;
     font-size: 21px;
-    line-height: 33px;
     color: rgba(0, 0, 0, 0.84);
-    margin-bottom: 25px;
+    line-height: 33px;
+    margin-top: 0;
+    margin-bottom: 28px;
 }
 
-/* Стили для кода */
-pre {
-    background-color: #eeeeee;
-    padding: 20px;
-    border-radius: 3px;
-    overflow-x: auto;
-    margin: 30px 0;
-}
-
-code {
+.article code {
     font-family: "Courier New", monospace;
-    font-size: 18px;
-}
->>>>>>> 5c712f8 (Добавлена статья частично)
-h1, h2, h3{
-    
-    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
-    
-    font-size: 42px;
-    line-height: 44px;
-    color: rgba(0, 0, 0, 0.84);
-    
-    margin-bottom: 10px; 
-}
-
-body {
-    font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-    font-size: 21px;
-    line-height: 33px;
-    color: rgba(0, 0, 0, 0.84);
-
-    margin-bottom: 55px; 
-
-}
-
-code, pre {
-    font-family: "Courier New", monospace;
-    font-size: 21px;
-    line-height: 33px;
-
-    background-color: #eeeeee; 
+    background-color: #f2f2f2;
     padding: 0 3px;
 }
 
-img {
+.article img {
+    display: block;
     max-width: 100%;
     height: auto;
-    display: block;
-    margin: 20px 0;
+    margin-top: 43px;
+    margin-bottom: 37px;
 }
 
 @media (max-width: 800px) {
-/* Тут пиши стили для мобилки.
-    Стили применятся только когда страничка будет ≤800px шириной
- */
-    .site-header {
-        padding: 15px 20px;
-        gap: 15px;
+    .header-container {
+        align-items: flex-start;
+        flex-direction: column;
     }
-    
-    .main-nav {
-        margin-left: -20px;
-        margin-right: -20px;
-        padding-left: 20px;
-        padding-right: 20px;
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
     }
-    
-    .nav-list {
-        gap: 20px;
-        flex-wrap: wrap;
+
+    nav a {
+        font-size: 20px;
+        line-height: 25px;
     }
-    
-    .nav-list a {
+
+    .article h1 {
+        font-size: 26px;
+        line-height: 28px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .article h2 {
+        font-size: 22px;
+        line-height: 25px;
+        margin-top: 25px;
+        margin-bottom: 6px;
+    }
+
+    .article p {
         font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 20px;
+    }
+
+    .article img {
+        margin-top: 25px;
+        margin-bottom: 25px;
     }
 }
+
