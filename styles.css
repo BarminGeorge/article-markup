@@ -1,5 +1,12 @@
 /* Тут пиши основные стили */
+/* Контейнер для статьи, чтобы она была по центру */
+.content {
+    max-width: 700px; /* Та самая ширина из макета */
+    margin: 0 auto;   /* Центрируем блок */
+    padding: 193px 20px 50px; /* 193px — отступ сверху из твоего скрина */
+}
 
+<<<<<<< HEAD
 * {
     margin: 0;
     padding: 0;
@@ -84,6 +91,47 @@ body {
     color: #d0021b;
 }
 
+=======
+/* Стили для заголовка h1 (мы их уже обсуждали) */
+h1 {
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
+    font-size: 42px;
+    line-height: 44px;
+    color: rgba(0, 0, 0, 0.84);
+    margin-bottom: 25px;
+}
+
+/* Стили для подзаголовков (если они есть в тексте) */
+h2 {
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
+    font-size: 30px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+/* Стили для основного текста */
+p {
+    font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+    font-size: 21px;
+    line-height: 33px;
+    color: rgba(0, 0, 0, 0.84);
+    margin-bottom: 25px;
+}
+
+/* Стили для кода */
+pre {
+    background-color: #eeeeee;
+    padding: 20px;
+    border-radius: 3px;
+    overflow-x: auto;
+    margin: 30px 0;
+}
+
+code {
+    font-family: "Courier New", monospace;
+    font-size: 18px;
+}
+>>>>>>> 5c712f8 (Добавлена статья частично)
 h1, h2, h3{
     
     font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
