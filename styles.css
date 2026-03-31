@@ -1,5 +1,41 @@
 /* Тут пиши основные стили */
 
+h1, h2, h3{
+    
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
+    
+    font-size: 42px;
+    line-height: 44px;
+    color: rgba(0, 0, 0, 0.84);
+    
+    margin-bottom: 10px; 
+}
+
+body {
+    font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+    font-size: 21px;
+    line-height: 33px;
+    color: rgba(0, 0, 0, 0.84);
+
+    margin-bottom: 55px; 
+
+}
+
+code, pre {
+    font-family: "Courier New", monospace;
+    font-size: 21px;
+    line-height: 33px;
+
+    background-color: #eeeeee; 
+    padding: 0 3px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px 0;
+}
 
 @media (max-width: 800px) {
 /* Тут пиши стили для мобилки.
