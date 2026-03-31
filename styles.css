@@ -1,5 +1,89 @@
 /* Тут пиши основные стили */
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.site-header {
+    background: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.logo a {
+    display: block;
+    line-height: 0;
+}
+
+.logo img {
+    height: 64px;
+    width: 97px;
+}
+
+.main-nav {
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-left: -40px;
+    margin-right: -40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: #f5f5f5;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #333333;
+    font-family: LucidaGrande, 'Lucida Grande', Arial, sans-serif;
+    font-size: 24px;
+    line-height: 1.2;
+    text-align: left;
+    transition: border-bottom 0.3s ease;
+    display: inline-block;
+    border-bottom: 1px solid transparent;
+    position: relative;
+}
+
+.nav-list a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 3px;
+    height: 1px;
+    background-color: #000000;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.nav-list a:hover::after {
+    opacity: 1;
+}
+
+.nav-list a:hover {
+    border-bottom: 1px solid transparent;
+}
+
+.nav-list a.active {
+    color: #d0021b;
+}
+
 h1, h2, h3{
     
     font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
@@ -41,4 +125,24 @@ img {
 /* Тут пиши стили для мобилки.
     Стили применятся только когда страничка будет ≤800px шириной
  */
+    .site-header {
+        padding: 15px 20px;
+        gap: 15px;
+    }
+    
+    .main-nav {
+        margin-left: -20px;
+        margin-right: -20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .nav-list {
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    
+    .nav-list a {
+        font-size: 18px;
+    }
 }
